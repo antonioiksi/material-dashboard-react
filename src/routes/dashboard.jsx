@@ -17,7 +17,56 @@ import Maps from "views/Maps/Maps.jsx";
 import NotificationsPage from "views/Notifications/Notifications.jsx";
 import UpgradeToPro from "views/UpgradeToPro/UpgradeToPro.jsx";
 
+import Graphql from "../views/Graphql/Graphql";
+import AdminPage from "../views/AdminPage/AdminPage";
+import ExpertPage from "../views/ExpertPage/ExpertPage";
+import ObjectCheckListPage from "../views/ObjectCheckListPage/ObjectCheckListPage";
+import OutsidePetitionPage from "../views/OutsidePetitionPage/OutsidePetitionPage";
+import InsidePetitionPage from "../views/InsidePetitionPage/InsidePetitionPage";
+
 const dashboardRoutes = [
+  {
+    path: "/admin-page",
+    sidebarName: "Admin page",
+    navbarName: "Admin page",
+    icon: "content_paste",
+    component: AdminPage
+  },
+  {
+    path: "/expert-page",
+    sidebarName: "Expert page",
+    navbarName: "Expert page",
+    icon: "content_paste",
+    component: ExpertPage
+  },
+  {
+    path: "/object-check-list-page",
+    sidebarName: "Object CheckList Page",
+    navbarName: "Object CheckList Page",
+    icon: "content_paste",
+    component: ObjectCheckListPage
+  },
+  {
+    path: "/outside-petitions-page",
+    sidebarName: "Outside Petitions Page",
+    navbarName: "Outside Petitions Page",
+    icon: "content_paste",
+    component: OutsidePetitionPage
+  },
+  {
+    path: "/inside-petitions-page",
+    sidebarName: "Inside Petitions Page",
+    navbarName: "Inside Petitions Page",
+    icon: "content_paste",
+    component: InsidePetitionPage
+  },
+  {
+    path: "/graphql",
+    sidebarName: "Graphql builder",
+    navbarName: "Graphql builder",
+    icon: "content_paste",
+    component: Graphql
+  },
   {
     path: "/dashboard",
     sidebarName: "Dashboard",
